@@ -1,0 +1,181 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const title =
+  'What to Do After a Car Accident in California (Before Talking to Insurance)';
+const description =
+  'A step-by-step guide on what to do after a car accident in California, including medical care, documentation, and dealing with insurance before a lawsuit.';
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
+
+  <body>
+    <Header />
+
+    <main class="article">
+      <header class="article-header">
+        <h1>{title}</h1>
+        <p class="lede">
+          If you’ve been in a car accident in California, what you do in the first hours and days can
+          quietly determine whether your injury claim succeeds or struggles. This guide explains the
+          practical steps to take <strong>before</strong> talking to the insurance company.
+        </p>
+      </header>
+
+      <section>
+        <h2>1. Make safety and medical care the priority</h2>
+        <p>
+          Your health comes first. If anyone is injured, call 911. Even if injuries seem minor,
+          symptoms like concussions, soft-tissue injuries, and internal trauma often appear hours or
+          days later.
+        </p>
+        <p>
+          If emergency transport isn’t required, seek medical evaluation as soon as possible. From a
+          claim perspective, delayed treatment is one of the most common reasons insurers question
+          whether an injury was caused by the accident.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. Document the scene while it’s fresh</h2>
+        <p>
+          If it’s safe, take photos or video of the vehicles, license plates, damage, skid marks,
+          traffic signals, and the surrounding area. Get contact information for witnesses.
+        </p>
+        <p>
+          Police reports can be helpful, but they are not always complete. Your own documentation can
+          become critical later.
+        </p>
+      </section>
+
+      <section>
+        <h2>3. Be careful what you say at the scene</h2>
+        <p>
+          Stick to exchanging required information and checking on safety. Avoid speculating about
+          fault or apologizing, even casually. Statements made in stressful moments are often taken
+          out of context later.
+        </p>
+      </section>
+
+      <section>
+        <h2>4. Notify insurance — but don’t rush into a statement</h2>
+        <p>
+          Most policies require prompt notice of an accident. That does <em>not</em> mean you must
+          immediately give a recorded statement to the other driver’s insurance company.
+        </p>
+        <p>
+          Insurance adjusters are trained to ask questions that lock people into incomplete or
+          inaccurate descriptions before they fully understand their injuries.
+        </p>
+      </section>
+
+      <section>
+        <h2>5. Follow through with treatment and keep records</h2>
+        <p>
+          Attend follow-up appointments, follow medical advice, and keep copies of records, bills,
+          and prescriptions. Gaps in care are frequently used to argue that injuries were minor or
+          unrelated.
+        </p>
+      </section>
+
+      <section>
+        <h2>6. Understand that early offers are often incomplete</h2>
+        <p>
+          Quick settlement offers may seem helpful, especially when bills are arriving. In reality,
+          they often come before the full extent of injuries and future treatment is known.
+        </p>
+        <p>
+          Once a release is signed, you generally cannot go back — even if symptoms worsen.
+        </p>
+      </section>
+
+      <section class="callout">
+        <h2>When it makes sense to get guidance</h2>
+        <p>
+          You don’t need to file a lawsuit to get help understanding the process. Many injury claims
+          are resolved pre-litigation, but they still benefit from clear documentation, timing, and
+          strategy.
+        </p>
+        <p>
+          If you’re injured and unsure what to do next, you can reach out for a no-pressure
+          conversation about your situation.
+        </p>
+        <a href="/contact" class="cta">Get clear information about your injury</a>
+      </section>
+
+      <section class="disclaimer">
+        <p>
+          <strong>Disclaimer:</strong> This article provides general information and does not constitute
+          legal advice. Reading this does not create an attorney-client relationship.
+        </p>
+      </section>
+    </main>
+
+    <Footer />
+
+    <style>
+      .article {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 3rem 1.25rem 4rem;
+      }
+
+      .article-header h1 {
+        font-size: clamp(32px, 4vw, 44px);
+        line-height: 1.15;
+        margin-bottom: 1rem;
+        letter-spacing: -0.02em;
+      }
+
+      .lede {
+        font-size: 1.125rem;
+        line-height: 1.7;
+        opacity: 0.9;
+        max-width: 70ch;
+      }
+
+      section {
+        margin-top: 2.25rem;
+      }
+
+      h2 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        letter-spacing: -0.01em;
+      }
+
+      p {
+        line-height: 1.7;
+        margin: 0.5rem 0;
+      }
+
+      .callout {
+        margin-top: 3rem;
+        padding: 1.5rem;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+      }
+
+      .cta {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.75rem 1rem;
+        border-radius: 10px;
+        border: 1px solid currentColor;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .disclaimer {
+        margin-top: 3rem;
+        font-size: 0.85rem;
+        opacity: 0.8;
+      }
+    </style>
+  </body>
+</html>
