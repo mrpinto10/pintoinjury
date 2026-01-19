@@ -1,63 +1,135 @@
 ---
-import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
-import Layout from '../layouts/BlogPost.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const title = 'About This Site | Pinto Injury Resources';
+const description =
+  'About Pinto Injury Resources — an informational website operated by a law student providing general information about California personal injury claims.';
 ---
 
-<Layout
-	title="About Me"
-	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('August 08 2021')}
-	heroImage={AboutHeroImage}
->
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
-		viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-		adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus
-		et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-		vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque
-		sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-	</p>
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
 
-	<p>
-		Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
-		tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non
-		blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna
-		porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis
-		massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-		Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis
-		bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra
-		massa massa ultricies mi.
-	</p>
+  <body>
+    <Header />
 
-	<p>
-		Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl
-		suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet
-		nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae
-		turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem
-		dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat
-		semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-		vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum
-		facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam
-		vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla
-		urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
-	</p>
+    <main class="wrap">
+      <header class="hero">
+        <h1>About This Site</h1>
+        <p class="lede">
+          Pinto Injury Resources is an informational website created to help people better
+          understand the personal injury insurance claim process in California.
+        </p>
+      </header>
 
-	<p>
-		Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper
-		viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc
-		scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur
-		gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus
-		pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-		blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id
-		cursus metus aliquam eleifend mi.
-	</p>
+      <section class="card">
+        <h2>What this site is</h2>
+        <p>
+          This website provides <strong>general educational information</strong> about personal
+          injury claims, insurance processes, and common issues people face after an accident.
+          It is designed to help visitors become more informed as they consider their options.
+        </p>
+        <p>
+          The content on this site is intended to be clear, practical, and accessible, without
+          pressure or sales tactics.
+        </p>
+      </section>
 
-	<p>
-		Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta
-		nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam
-		tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci
-		ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar
-		proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
-	</p>
-</Layout>
+      <section class="card">
+        <h2>What this site is not</h2>
+        <p>
+          Pinto Injury Resources is <strong>not a law firm</strong> and does not provide legal
+          advice, legal opinions, or legal representation.
+        </p>
+        <p>
+          This site is operated by a <strong>law student</strong>, not a licensed attorney.
+          Visiting this site, reading its content, or contacting the site does not create an
+          attorney–client relationship.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>About attorney referrals</h2>
+        <p>
+          In some situations, visitors may request help identifying independent, licensed
+          California attorneys who handle personal injury matters.
+        </p>
+        <p>
+          Any attorney referrals are made solely as a convenience to the visitor.
+          <strong>No referral fees are accepted or paid</strong>, and this site does not endorse,
+          control, or supervise the services provided by any attorney.
+        </p>
+        <p>
+          Attorneys who may be referenced or contacted through this site operate independently
+          and are responsible for their own legal services and advice.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Important notice</h2>
+        <p>
+          All information provided on this website is for <strong>general educational purposes
+          only</strong>. It should not be relied upon as a substitute for advice from a licensed
+          attorney who can evaluate the specific facts of a situation.
+        </p>
+        <p>
+          Laws, procedures, and insurance practices can change, and outcomes depend on individual
+          circumstances.
+        </p>
+      </section>
+
+      <section class="card">
+        <p class="closing">
+          If you have questions about the content of this site or its purpose, you are welcome
+          to reach out for a no-pressure conversation focused on general information only.
+        </p>
+      </section>
+    </main>
+
+    <Footer />
+
+    <style>
+      .wrap {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 3rem 1.25rem 4rem;
+      }
+      .hero h1 {
+        font-size: clamp(32px, 4vw, 44px);
+        line-height: 1.15;
+        margin: 0 0 0.75rem 0;
+        letter-spacing: -0.02em;
+      }
+      .lede {
+        font-size: 1.125rem;
+        line-height: 1.7;
+        max-width: 75ch;
+        margin: 0;
+        opacity: 0.92;
+      }
+      .card {
+        margin-top: 1.25rem;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        border-radius: 14px;
+        padding: 1.25rem;
+        background: white;
+      }
+      h2 {
+        font-size: 1.1rem;
+        margin: 0 0 0.5rem 0;
+        letter-spacing: -0.01em;
+      }
+      p {
+        margin: 0.5rem 0;
+        line-height: 1.7;
+      }
+      .closing {
+        margin: 0;
+        opacity: 0.9;
+      }
+    </style>
+  </body>
+</html>
