@@ -3,21 +3,33 @@ const today = new Date();
 ---
 
 <footer>
-	<p>
-  Pinto Injury Resources is an informational website operated by a law student.
-  It is not a law firm and does not provide legal advice or legal representation.
-  Any attorney referrals are to independent lawyers. No referral fees are accepted.
-</p>
+  <p>
+    Pinto Injury Resources is an informational website operated by a law student.
+    It is not a law firm and does not provide legal advice or legal representation.
+    Any attorney referrals are to independent lawyers. No referral fees are accepted.
+  </p>
 
-	&copy; {today.getFullYear()} Pinto Injury Resources. All rights reserved.
-	
+  <p style="margin-top: 0.75rem;">
+    <a href="/privacy" style="text-decoration: none;">
+      Privacy Policy
+    </a>
+  </p>
+
+  <p style="margin-top: 0.75rem; font-size: 0.9rem;">
+    &copy; {today.getFullYear()} Pinto Injury Resources. All rights reserved.
+  </p>
 </footer>
+
 <style>
-	footer {
-		padding: 2em 1em 6em 1em;
-		background: linear-gradient(var(--gray-gradient)) no-repeat;
-		color: rgb(var(--gray));
-		text-align: center;
-	}
-	
+  footer {
+    padding: 2em 1em 6em 1em;
+    background: linear-gradient(var(--gray-gradient)) no-repeat;
+    color: rgb(var(--gray));
+    text-align: center;
+  }
+
+  footer a {
+    color: inherit;
+    text-decoration: underline;
+  }
 </style>
