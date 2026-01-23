@@ -1,0 +1,109 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+
+export const prerender = true;
+
+const title = "Talking to Insurance Adjusters After a Car Accident: Common Mistakes";
+const description =
+  "A plain-English look at why insurance adjusters call quickly, what recorded statements are, and common misunderstandings people have after a car accident in California. Educational information only — not legal advice.";
+
+const canonical = "https://pintoinjury.com/resources/talking-to-insurance-adjusters-after-a-car-accident-common-mistakes/";
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} canonical={canonical} />
+  </head>
+  <body>
+    <Header />
+
+    <main class="container">
+      <article class="prose">
+        <header>
+          <h1>{title}</h1>
+          <p class="lede">
+            After a crash, an insurance adjuster may call sooner than you expect. This page explains
+            common misunderstandings people have during early insurance conversations — in plain
+            English.
+          </p>
+        </header>
+
+        <section class="notice">
+          <p>
+            <strong>Educational information only.</strong> Pinto Injury Resources is not a law firm.
+            This page does not provide legal advice and does not create an attorney–client relationship.
+          </p>
+        </section>
+
+        <h2>Why adjusters often call quickly</h2>
+        <p>
+          Insurance companies usually try to document a claim early. That can include collecting basic
+          information, opening a file, and understanding what happened while details still feel fresh.
+        </p>
+
+        <h2>Recorded statements: what people misunderstand</h2>
+        <p>
+          A “recorded statement” is when an insurance representative asks questions while recording
+          the conversation. People often assume it’s an informal check-in — but it’s usually part of
+          the claim documentation process.
+        </p>
+        <ul>
+          <li><strong>“It’s just a friendly conversation.”</strong> Many people later realize the call was documented carefully.</li>
+          <li><strong>“If I’m honest, it can’t affect anything.”</strong> Even honest answers can be misunderstood if details are unclear or incomplete.</li>
+          <li><strong>“I know exactly how I’m injured right away.”</strong> Symptoms sometimes develop hours or days later.</li>
+        </ul>
+
+        <h2>Early questions that cause confusion</h2>
+        <ul>
+          <li><strong>“Are you injured?”</strong></li>
+          <li><strong>“How are you feeling today?”</strong></li>
+          <li><strong>“Was anyone else at fault?”</strong></li>
+          <li><strong>“Can you walk me through what happened?”</strong></li>
+        </ul>
+
+        <h2>Common mistakes people don’t realize are mistakes</h2>
+        <ul>
+          <li><strong>Speaking casually without realizing it becomes part of the file.</strong></li>
+          <li><strong>Answering before injuries are fully understood.</strong></li>
+          <li><strong>Assuming the adjuster already has full context.</strong></li>
+          <li><strong>Misunderstanding what “fault” means in practice.</strong></li>
+        </ul>
+
+        <h2>Related resources</h2>
+        <ul>
+          <li>
+            <a href="/resources/what-to-do-after-a-car-accident-in-california-before-talking-to-insurance/">
+              What to Do After a Car Accident in California — Before Talking to Insurance
+            </a>
+          </li>
+          <li>
+            <a href="/resources/how-insurance-companies-review-car-accident-claims-in-california/">
+              How Insurance Companies Review Car Accident Claims in California
+            </a>
+          </li>
+          <li>
+            <a href="/resources/why-minor-car-accidents-can-still-lead-to-serious-injury-claims/">
+              Why Minor Car Accidents Can Still Lead to Serious Injury Claims
+            </a>
+          </li>
+          <li>
+            <a href="/resources/what-happens-when-fault-is-disputed-after-a-california-car-accident/">
+              What Happens When Fault Is Disputed After a California Car Accident
+            </a>
+          </li>
+        </ul>
+
+        <footer class="fineprint">
+          <p>
+            <strong>Reminder:</strong> This page is general information, not legal advice. If you need
+            legal advice, consult a licensed California attorney.
+          </p>
+        </footer>
+      </article>
+    </main>
+
+    <Footer />
+  </body>
+</html>
