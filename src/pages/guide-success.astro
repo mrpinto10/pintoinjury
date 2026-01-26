@@ -1,0 +1,99 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const title = "Guide Access | Pinto Injury Resources";
+const description =
+  "Access educational guides about the California car accident insurance claim process. Not a law firm. No legal advice.";
+
+const canonical = "https://pintoinjury.com/guide-success/";
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} canonical={canonical} />
+  </head>
+
+  <body>
+    <Header />
+
+   <main class="container" style="padding: 3rem 1rem;">
+  <header style="max-width: 75ch; margin-bottom: 1.25rem;">
+    <h1 style="margin: 0 0 0.75rem 0;">Thank you, below are the guides</h1>
+
+    <p style="margin: 0 0 0.75rem 0; opacity: 0.9;">
+      These guides provide <strong>general educational information only</strong> about the
+      California car accident insurance claim process. They are not legal advice.
+    </p>
+
+    <p style="margin: 0; font-size: 0.95rem; opacity: 0.85;">
+      <strong>Important:</strong> Pinto Injury Resources is an informational website operated by a law student.
+      It is <strong>not a law firm</strong> and does <strong>not</strong> provide legal advice or legal
+      representation. No attorney–client relationship is created by using this site.
+    </p>
+  </header>
+
+
+      <section style="margin-top: 1.25rem; max-width: 75ch;">
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1rem;
+          "
+        >
+          <!-- Guide 1 -->
+          <a class="card" href="/resources/how-insurance-companies-review-car-accident-claims-california">
+            <h2 style="margin: 0 0 0.4rem 0; font-size: 1.1rem;">
+              Guide 1: Insurance process overview
+            </h2>
+            <p style="margin: 0; opacity: 0.9;">
+              A plain-English explanation of how car accident claims are typically reviewed in California.
+            </p>
+          </a>
+
+          <!-- Guide 2 -->
+          <a class="card" href="/resources/how-long-car-accident-claims-usually-take-california">
+            <h2 style="margin: 0 0 0.4rem 0; font-size: 1.1rem;">
+              Guide 2: Why claims take time
+            </h2>
+            <p style="margin: 0; opacity: 0.9;">
+              Typical timelines, common delays, and how medical treatment and documentation affect timing.
+            </p>
+          </a>
+
+          <!-- Guide 3 -->
+          <a class="card" href="/resources/when-car-accident-claims-are-resolved-without-a-lawsuit-california">
+            <h2 style="margin: 0 0 0.4rem 0; font-size: 1.1rem;">
+              Guide 3: Resolving claims without a lawsuit
+            </h2>
+            <p style="margin: 0; opacity: 0.9;">
+              How many claims resolve pre-litigation and why lawsuits are not automatic.
+            </p>
+          </a>
+        </div>
+
+        <p style="margin: 1rem 0 0 0; opacity: 0.9;">
+          You can also browse more educational materials here:
+          <a href="/resources">Injury Resources</a>.
+        </p>
+      </section>
+
+      <section class="surface" style="padding: 1.25rem; margin-top: 1.25rem; max-width: 75ch;">
+        <p style="margin: 0; font-size: 0.95rem; opacity: 0.85;">
+          <strong>Important notice:</strong> This website provides general educational information only.
+          Do not send confidential or sensitive information unless and until you have confirmed a formal
+          relationship with a licensed attorney.
+        </p>
+      </section>
+
+      <p style="margin-top: 1rem;">
+        <a class="btn" href="/resources">Browse injury resources</a>
+        <a class="btn" href="/" style="margin-left: 0.5rem;">Return to homepage</a>
+      </p>
+    </main>
+
+    <Footer />
+  </body>
+</html>
