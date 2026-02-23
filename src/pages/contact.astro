@@ -3,14 +3,17 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
+export const prerender = true;
+
 const title = 'Contact | Pinto Injury Resources';
 const description =
-  'Contact Pinto Injury Resources for general educational information about the personal injury claim process in California. Not a law firm.';
+  'Pinto Injury Resources is an informational website operated by a law student. This site does not provide legal advice and does not accept messages or requests for assistance.';
+const canonical = 'https://pintoinjury.com/contact/';
 ---
 
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} />
+    <BaseHead title={title} description={description} canonical={canonical} />
   </head>
 
   <body>
@@ -23,199 +26,24 @@ const description =
         <div class="surface" style="padding: 1.25rem;">
           <p style="margin: 0 0 0.75rem 0;">
             <strong>Important:</strong> Pinto Injury Resources is an informational website operated by a law student.
-            It is <strong>not a law firm</strong> and does <strong>not</strong> provide legal advice or legal
-            representation. No attorney–client relationship is created by contacting or using this site.
+            It is <strong>not a law firm</strong> and does <strong>not</strong> provide legal advice, legal opinions,
+            legal representation, or individualized guidance.
           </p>
 
           <p style="margin: 0;">
-           When appropriate, we may help facilitate a request for contact with an independent, licensed 
-           California attorney, without evaluating your situation and without recommending any attorney. <strong>No referral fees are accepted or paid.</strong>
-            Messages are not confidential and may be forwarded for administrative purposes.
+            This website does <strong>not</strong> accept messages, case information, or requests for assistance.
+            Nothing submitted through this site is confidential, and reading this site does not create an
+            attorney–client relationship.
           </p>
         </div>
       </header>
 
       <section class="surface" style="padding: 1.25rem; margin-top: 1.25rem; max-width: 75ch;">
-        <h2 style="margin: 0 0 0.5rem 0;">A no-pressure way to get information</h2>
+        <h2 style="margin: 0 0 0.5rem 0;">Need help with a specific situation?</h2>
 
-        <p style="margin: 0.5rem 0;">
-          If you’ve been injured and are trying to understand what usually happens next, 
-          <strong>Complete the form below</strong> to receive a free information guide.
-        </p>
-
-        <p style="margin: 0.75rem 0 0.5rem 0;">This site focuses on:</p>
-        <ul style="margin: 0; padding-left: 1.1rem; line-height: 1.7;">
-          <li>explaining the pre-litigation injury claim process</li>
-          <li>helping people understand common insurance issues</li>
-          <li>sharing educational resources, not legal advice</li>
-        </ul>
-
-        <p style="margin: 0.75rem 0 0 0; opacity: 0.9;">
-          There is no obligation and no expectation that you take any next step.
-        </p>
-      </section>
-
-     <form
-  id="guideForm"
-  method="POST"
-  action="https://formspree.io/f/xnjddyva"
-  style="max-width: 65ch; margin-top: 1.5rem;"
->
-<input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
-<input type="hidden" name="_redirect" value="https://pintoinjury.com/guide-success" />
-<input type="hidden" name="_subject" value="New guide request — Pinto Injury Resources" />
-
- 
-
-
-  <section style="border: 1px solid rgba(0,0,0,0.12); border-radius: 12px; padding: 1.25rem; background: #fff;">
-    <h2 style="font-size: 1.25rem; margin: 0 0 0.5rem 0;">
-      Get a free educational guide (California car accident claims)
-    </h2>
-
-    <p style="margin: 0 0 1rem 0; opacity: 0.9;">
-      Choose a topic and I’ll email you a short, plain-English guide. This is
-      <strong>general educational information only</strong> — not legal advice.
-    </p>
-
-    <p style="margin: 0 0 1rem 0; opacity: 0.9;">
-      <strong>Important:</strong> Please do <strong>not</strong> share details about your accident,
-      injuries, fault, or insurance claim. This form is only for requesting general educational materials.
-    </p>
-
-    <!-- Name -->
-    <label for="first_name" style="display:block; font-weight: 600; margin: 0.75rem 0 0.25rem 0;">
-      First name
-    </label>
-    <input
-      id="first_name"
-      name="first_name"
-      type="text"
-      required
-      autocomplete="given-name"
-      style="width:100%; padding:0.65rem; border-radius:10px; border:1px solid rgba(0,0,0,0.15);"
-    />
-
-    <!-- Email -->
-    <label for="email" style="display:block; font-weight: 600; margin: 0.9rem 0 0.25rem 0;">
-      Email address
-    </label>
-    <input
-      id="email"
-      name="email"
-      type="email"
-      required
-      autocomplete="email"
-      style="width:100%; padding:0.65rem; border-radius:10px; border:1px solid rgba(0,0,0,0.15);"
-    />
-
-    
-
-    <!-- Topic selection -->
-    <fieldset style="border: none; padding: 0; margin: 1rem 0 0 0;">
-      <legend style="font-weight: 600; margin-bottom: 0.5rem;">
-        Choose a topic
-      </legend>
-
-      <label style="display:flex; gap:0.6rem; align-items:flex-start; padding:0.6rem; border:1px solid rgba(0,0,0,0.10); border-radius:10px; margin-bottom:0.6rem;">
-        <input type="radio" name="guide_topic" value="process-overview" required style="margin-top:0.15rem;" />
-        <span>
-          <strong>Guide 1: Insurance process overview</strong><br />
-          <span style="opacity:0.9;">
-            A plain-English explanation of how car accident claims are typically reviewed in California.
-          </span>
-        </span>
-      </label>
-
-      <label style="display:flex; gap:0.6rem; align-items:flex-start; padding:0.6rem; border:1px solid rgba(0,0,0,0.10); border-radius:10px; margin-bottom:0.6rem;">
-        <input type="radio" name="guide_topic" value="timelines" required style="margin-top:0.15rem;" />
-        <span>
-          <strong>Guide 2: Why claims take time</strong><br />
-          <span style="opacity:0.9;">
-            Typical timelines, common delays, and how medical treatment and documentation affect timing.
-          </span>
-        </span>
-      </label>
-
-      <label style="display:flex; gap:0.6rem; align-items:flex-start; padding:0.6rem; border:1px solid rgba(0,0,0,0.10); border-radius:10px;">
-        <input type="radio" name="guide_topic" value="prelit-resolution" required style="margin-top:0.15rem;" />
-        <span>
-          <strong>Guide 3: Resolving claims without a lawsuit</strong><br />
-          <span style="opacity:0.9;">
-            How many claims resolve pre-litigation and why lawsuits are not automatic.
-          </span>
-        </span>
-      </label>
-    </fieldset>
-
-    <!-- Acknowledgment (required) -->
-    <label style="display:flex; gap:0.6rem; margin: 1rem 0 0 0; align-items:flex-start;">
-      <input type="checkbox" name="ack" required style="margin-top:0.2rem;" />
-      <span style="font-size: 0.95rem; opacity: 0.95;">
-        I understand Pinto Injury Resources is <strong>not a law firm</strong> and does
-        <strong>not provide legal advice</strong>. Submitting this form does <strong>not</strong> create an
-        attorney–client relationship, and I will not send confidential or case-specific information.
-      </span>
-    </label>
-
-    <!-- Submit -->
-    <button
-      type="submit"
-      style="margin-top: 1rem; padding:0.8rem 1.1rem; border-radius: 10px; border:1px solid rgba(0,0,0,0.15); background:#fff; cursor:pointer;"
-    >
-      Email me the guide
-    </button>
-
-    <!-- Micro footer -->
-    <p style="margin: 0.9rem 0 0 0; font-size: 0.95rem; opacity: 0.85;">
-      You may receive a short follow-up email series with additional educational resources. You can unsubscribe at any time.
-    </p>
-  </section>
-  
-</form>
-
-
-
-      <section class="surface" style="padding: 1.25rem; margin-top: 1.25rem; max-width: 75ch;">
-        <h2 style="margin: 0 0 0.5rem 0;">How to reach us</h2>
-
-       <p style="opacity: 0.85; max-width: 70ch;">
-  Complete the above form.
-</p>
-<script is:inline>
-  const form = document.getElementById("guideForm");
-
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-
-    const action = form.getAttribute("action");
-    const formData = new FormData(form);
-
-    try {
-      const res = await fetch(action, {
-        method: "POST",
-        body: formData,
-        headers: { Accept: "application/json" },
-      });
-
-      if (res.ok) {
-        window.location.href = "/guide-success";
-        return;
-      }
-
-      // If Formspree returns an error, show a simple message and do NOT auto-submit
-      alert("Sorry — something went wrong submitting the form. Please try again.");
-    } catch (err) {
-      alert("Network error — please try again.");
-    }
-  });
-</script>
-
-
-  
-
-        <p style="margin: 0; opacity: 0.9;">
-          Serving Ontario, Upland, Rancho Cucamonga, and nearby Inland Empire areas.
+        <p style="margin: 0.5rem 0; opacity: 0.95;">
+          If you need advice about your specific facts, you should consult a licensed California attorney.
+          This website provides general educational information only.
         </p>
 
         <p style="margin: 1rem 0 0 0;">
@@ -226,9 +54,8 @@ const description =
 
       <section class="surface" style="padding: 1.25rem; margin-top: 1.25rem; max-width: 75ch;">
         <p style="margin: 0; font-size: 0.95rem; opacity: 0.85;">
-          <strong>Important notice:</strong> This website provides general educational information only. Contacting this
-          site does not create an attorney–client relationship. Do not send confidential or sensitive information unless
-          and until you have confirmed a formal relationship with a licensed attorney.
+          <strong>Notice:</strong> This site is for general educational purposes only. It does not provide legal advice
+          and does not create an attorney–client relationship.
         </p>
       </section>
     </main>
@@ -236,4 +63,3 @@ const description =
     <Footer />
   </body>
 </html>
-
