@@ -1,135 +1,128 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
-const title = 'About This Site | Pinto Injury Resources';
+export const prerender = true;
+
+const title = "About | Pinto Injury Resources";
 const description =
-  'About Pinto Injury Resources — an informational website operated by a law student providing general information about California personal injury claims.';
+  "Pinto Injury Resources is an educational website created to help people better understand California personal injury insurance claim processes. Educational information only — not legal advice.";
+
+const canonical = "https://pintoinjury.com/about/";
 ---
 
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} />
+    <BaseHead title={title} description={description} canonical={canonical} />
   </head>
 
   <body>
     <Header />
 
-    <main class="wrap">
-      <header class="hero">
-        <h1>About This Site</h1>
-        <p class="lede">
-          Pinto Injury Resources is an informational website created to help people better
-          understand the personal injury insurance claim process in California.
-        </p>
-      </header>
+    <main class="container" style="padding: 3rem 1rem;">
+      <article style="max-width: 75ch;">
+        <h1 style="font-size: 2rem; line-height: 1.2; margin-bottom: 1rem;">
+          About Pinto Injury Resources
+        </h1>
 
-      <section class="card">
-        <h2>What this site is</h2>
-        <p>
-          This website provides <strong>general educational information</strong> about personal
-          injury claims, insurance processes, and common issues people face after an accident.
-          It is designed to help visitors become more informed as they consider their options.
+        <p style="font-size: 1.125rem; opacity: 0.92;">
+          Pinto Injury Resources is an educational website created to help people better understand how personal injury insurance claims commonly work in California.
         </p>
-        <p>
-          The content on this site is intended to be clear, practical, and accessible, without
-          pressure or sales tactics.
-        </p>
-      </section>
 
-      <section class="card">
-        <h2>What this site is not</h2>
         <p>
-          Pinto Injury Resources is <strong>not a law firm</strong> and does not provide legal
-          advice, legal opinions, or legal representation.
+          After a car accident, many people quickly discover that the insurance process can feel confusing, stressful, and difficult to understand. Questions often arise about claim timelines, medical documentation, insurance investigations, settlement discussions, vehicle damage, and what typically happens as a claim moves through the process.
         </p>
-        <p>
-          This site is operated by a <strong>law student</strong>, not a licensed attorney.
-          Visiting this site, reading its content, or contacting the site does not create an
-          attorney–client relationship.
-        </p>
-      </section>
 
-      <section class="card">
-        <h2>About attorney referrals</h2>
         <p>
-          In some situations, visitors may request help identifying independent, licensed
-          California attorneys who handle personal injury matters.
+          The goal of this website is simple: to make that process easier to understand through clear, practical, plain-English educational content.
         </p>
-        <p>
-          Any attorney referrals are made solely as a convenience to the visitor.
-          <strong>No referral fees are accepted or paid</strong>, and this site does not endorse,
-          control, or supervise the services provided by any attorney.
-        </p>
-        <p>
-          Attorneys who may be referenced or contacted through this site operate independently
-          and are responsible for their own legal services and advice.
-        </p>
-      </section>
 
-      <section class="card">
-        <h2>Important notice</h2>
-        <p>
-          All information provided on this website is for <strong>general educational purposes
-          only</strong>. It should not be relied upon as a substitute for advice from a licensed
-          attorney who can evaluate the specific facts of a situation.
-        </p>
-        <p>
-          Laws, procedures, and insurance practices can change, and outcomes depend on individual
-          circumstances.
-        </p>
-      </section>
+        <h2 style="margin-top: 2rem;">Why this site exists</h2>
 
-      <section class="card">
-        <p class="closing">
-          If you have questions about the content of this site or its purpose, you are welcome
-          to reach out for a no-pressure conversation focused on general information only.
+        <p>
+          Many people involved in accidents are exposed to unfamiliar insurance procedures for the first time.
         </p>
-      </section>
+
+        <p>
+          Terms such as liability investigation, documentation review, recorded statements, medical records, settlement evaluation, claim delays, repair estimates, and comparative fault can quickly become overwhelming.
+        </p>
+
+        <p>
+          Pinto Injury Resources was created to help explain these topics in a way that is easier to understand.
+        </p>
+
+        <p>
+          The focus of this site is education, transparency, and helping readers better understand how accident-related insurance claims often develop over time.
+        </p>
+
+        <h2 style="margin-top: 2rem;">What this website covers</h2>
+
+        <p>
+          This website publishes educational articles focused on topics commonly connected to California car accident claims, including:
+        </p>
+
+        <ul>
+          <li>insurance claim timelines</li>
+          <li>documentation and evidence review</li>
+          <li>vehicle damage and repair issues</li>
+          <li>accident investigations and fault disputes</li>
+          <li>common insurance communication issues</li>
+          <li>general accident claim processes in California</li>
+        </ul>
+
+        <p>
+          The content is intended to be practical, accessible, and easy to understand for people who simply want to learn more about how these systems commonly operate.
+        </p>
+
+        <h2 style="margin-top: 2rem;">Why understanding the process matters</h2>
+
+        <p>
+          For many people, the most difficult part of an accident claim is uncertainty.
+        </p>
+
+        <p>
+          The insurance process often involves multiple stages happening behind the scenes, and delays or changing timelines can create confusion and frustration.
+        </p>
+
+        <p>
+          Understanding how these systems commonly work can help people become more informed while learning about the general claim process.
+        </p>
+
+        <h2 style="margin-top: 2rem;">About the author</h2>
+
+        <p>
+          This website is independently operated by a law student with a strong interest in personal injury law, insurance claim systems, and legal education.
+        </p>
+
+        <p>
+          The purpose of this project is to study, research, and explain complex legal and insurance-related topics in a way that is accessible to everyday people.
+        </p>
+
+        <p>
+          This website is part of an ongoing effort to build a long-term educational resource focused on accident-related legal and insurance information in California.
+        </p>
+
+        <h2 style="margin-top: 2rem;">Important notice</h2>
+
+        <p>
+          Pinto Injury Resources is <strong>not a law firm</strong> and does <strong>not</strong> provide legal advice, legal opinions, legal representation, or individualized guidance.
+        </p>
+
+        <p>
+          The information provided on this website is intended solely for <strong>general educational purposes</strong>.
+        </p>
+
+        <p>
+          Reading content on this website does <strong>not</strong> create an attorney-client relationship, and the information provided should not be relied upon as a substitute for advice from a licensed attorney who can evaluate specific individual circumstances.
+        </p>
+
+        <p>
+          Laws, procedures, insurance practices, and claim outcomes vary depending on the facts of each situation.
+        </p>
+      </article>
     </main>
 
     <Footer />
-
-    <style>
-      .wrap {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 3rem 1.25rem 4rem;
-      }
-      .hero h1 {
-        font-size: clamp(32px, 4vw, 44px);
-        line-height: 1.15;
-        margin: 0 0 0.75rem 0;
-        letter-spacing: -0.02em;
-      }
-      .lede {
-        font-size: 1.125rem;
-        line-height: 1.7;
-        max-width: 75ch;
-        margin: 0;
-        opacity: 0.92;
-      }
-      .card {
-        margin-top: 1.25rem;
-        border: 1px solid rgba(0, 0, 0, 0.12);
-        border-radius: 14px;
-        padding: 1.25rem;
-        background: white;
-      }
-      h2 {
-        font-size: 1.1rem;
-        margin: 0 0 0.5rem 0;
-        letter-spacing: -0.01em;
-      }
-      p {
-        margin: 0.5rem 0;
-        line-height: 1.7;
-      }
-      .closing {
-        margin: 0;
-        opacity: 0.9;
-      }
-    </style>
   </body>
 </html>
